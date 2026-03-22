@@ -1,0 +1,56 @@
+/* Reset and general styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff; /* White background as requested */
+    font-family: Arial, sans-serif;
+}
+
+/* Map container */
+#map {
+    width: 100%;
+    height: 100%;
+    background: #ffffff; /* White background as requested */
+}
+
+/* Control panel for buttons */
+#controls {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 1000; /* Ensure controls are above Leaflet elements */
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Styling for buttons */
+button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button.active {
+    background-color: #28a745;
+}
+
+button.active:hover {
+    background-color: #218838;
+}
